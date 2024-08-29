@@ -10,7 +10,7 @@
   "torizon_debug_port2": "",
   "torizon_debug_port3": "",
   "torizon_gpu": "",
-  "torizon_arch": "",
+  "torizon_arch": "arm64",
   "wait_sync": "1",
   "torizon_run_as": "torizon",
   "torizon_app_root": "/home/torizon",
@@ -18,5 +18,11 @@
   "tcb.version": "3.11.0",
   "torizon.gpuPrefixRC": true,
   "terminal.integrated.defaultProfile.linux": "bash",
-  "tcb.fleetName": ""
+  "tcb.fleetName": "myfleet",
+  "docker_registry": "",
+  "docker_login": "andreravila",
+  "docker_password": "secret",
+  "docker_tag": "1",
+  "tcb.clientId": "tzn_api_89d2781c-fc9a-44b6-8deb-4db026aaa0b4_1jCrhb",
+  "tcb.clientSecret": "secret"
 }
