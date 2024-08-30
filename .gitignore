@@ -1,5 +1,5 @@
 storage/
 tuf/
-tcbTest2-TCB-CUSTOM/
+tcbtest2-TCB-CUSTOM/
 credentials.zip
 *.lock.yml
