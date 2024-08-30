@@ -18,7 +18,7 @@
   "tcb.version": "3.11.0",
   "torizon.gpuPrefixRC": true,
   "terminal.integrated.defaultProfile.linux": "bash",
-  "tcb.fleetName": "myfleet",
+  "tcb.fleetName": "my-fleet",
   "docker_registry": "",
   "docker_login": "andreravila",
   "docker_password": "secret",
