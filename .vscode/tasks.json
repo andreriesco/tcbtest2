@@ -534,7 +534,7 @@
             "options": {
                 "cwd": "${workspaceFolder}",
                 "env": {
-                    "VSCODE_CMD": "--verbose platform push --credentials credentials.zip --package-name tcbtest2 --package-version ${command:tcb.getNextPackageVersion} tcbtest"
+                    "VSCODE_CMD": "--verbose platform push --credentials credentials.zip --package-name tcbTest2 --package-version ${command:tcb.getNextPackageVersion} tcbzin"
                 }
             },
             "args": [
@@ -550,6 +550,7 @@
             ],
             "dependsOrder": "sequence",
             "dependsOn": [
+                "tcb-unpack"
             ],
             "icon": {
                 "id": "cloud-upload",
@@ -582,7 +583,7 @@
                 "update",
                 "fleet",
                 "latest",
-                "tcbtest2",
+                "tcbTest2",
                 "${command:tcb.fleetName}"
             ],
             "problemMatcher": [
@@ -617,7 +618,7 @@
                     "DOCKER_TAG": "${command:docker_tag}",
                     "TCB_CLIENTID": "${command:tcb.clientId}",
                     "TCB_CLIENTSECRET": "${command:tcb.clientSecret}",
-                    "TCB_PACKAGE": "tcbtest2",
+                    "TCB_PACKAGE": "tcbTest2",
                     "TCB_FLEET": "${command:tcb.fleetName}",
                     "TORIZON_ARCH": "${command:torizon_arch}"
                 }

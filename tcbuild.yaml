@@ -22,7 +22,7 @@ output:
   # Output section items (required).
   # ⚠️ change it for your needs
   easy-installer:
-    local: tcbtest-TCB-CUSTOM
+    local: tcbtest2-TCB-CUSTOM
   ostree:
     branch: tcbzin
     commit-subject: tcbzin
