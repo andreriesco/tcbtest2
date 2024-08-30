@@ -534,7 +534,7 @@
             "options": {
                 "cwd": "${workspaceFolder}",
                 "env": {
-                    "VSCODE_CMD": "--verbose platform push --credentials credentials.zip --package-name tcbTest2 --package-version ${command:tcb.getNextPackageVersion} tcbTest2"
+                    "VSCODE_CMD": "--verbose platform push --credentials credentials.zip --package-name tcbTest2 --package-version ${command:tcb.getNextPackageVersion} tcbtest"
                 }
             },
             "args": [
