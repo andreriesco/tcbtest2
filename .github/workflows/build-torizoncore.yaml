@@ -6,7 +6,8 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     name: Build & Deploy TorizonCore
-    container: ubuntu:23.10
+    container:
+      image: commontorizon/torizon-dev:next
     steps:
       - uses: actions/checkout@v3
       - uses: actions/cache@v3
@@ -14,19 +15,11 @@ jobs:
         with:
           path: storage/
           key: tcb
-      - name: Set abs-path file
+
+      - name: Get Host Absolute Workspace Path
         run: |
           echo "${{ github.workspace }}" >> abs-path
           cat abs-path
-      - name: Install build tools in container
-        run: | 
-          apt-get update
-          apt-get install -y wget curl libicu-dev
-          curl -fsSL https://get.docker.com -o get-docker.sh 
-          sh get-docker.sh
-                    
-          wget -nv https://github.com/PowerShell/PowerShell/releases/download/v7.4.2/powershell_7.4.2-1.deb_amd64.deb
-          dpkg -i powershell_7.4.2-1.deb_amd64.deb
 
       - name: Initial Setup
         shell: bash
